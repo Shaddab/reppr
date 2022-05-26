@@ -4,91 +4,87 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta name="author" content="Mohd Shadab">
         <title>MY First WebPage</title>
-        <style>
-            th, td, caption {
-                border: 1px solid #333;
-                font-family: 'Courier New', Courier, monospace;
-                border-collapse: separate;
-                padding: 0.5rem;
-            }
-        </style>
-        <!-- <link rel="stylesheet" href="main.css"> -->
+        <link rel="icon" href="img/html5.png" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
     </head>
+
     <body>
-        <h1>Welcome to The Little Taco Shop</h1>
+            <h1>Welcome to The Little Taco Shop</h1>
 
-        <ul>
-            <li>About LTS</li>
-            <li>Our Menu</li>
-            <li>Store Hours</li>
-            <li>Contact Us</li>
-        </ul>
+            <ul>
+                <li><a href="#About">About LTS</a></li>
+                <li><a href="#menu">Our Menu</a></li>
+                <li><a href="storehours.html">storehours</a></li>
+                <li><a href="ContactUs.html">ContactUs</a></li>
+            </ul>
 
-        <figure>
-            <img src="img/tacos_and_drink_400x267.png" alt="Taco" title="Taco" width = 400 height="267" loading="lazy">
-            <figcaption>Tacos and a Drink</figcaption>
-        </figure>
+            <figure>
+                <img src="img/tacos_and_drink_400x267.png" alt="Taco" title="Taco" width = 400 height="267" loading="lazy">
+                <figcaption>Tacos and a Drink</figcaption>
+            </figure>
         <hr>
 
-        <h2>About <abbr title="Love of Tacos">LTS</abbr></h2>
-        <p><abbr title="Love of tacos">LTS</abbr> was founded in 2022 Our shop was built from a <strong>love of tacos</strong>❤️❤️❤️. We hope our shop adds a unique and interesting place to our little town.</p>
+        <section id="About">
+            <h2>About <abbr title="Love of Tacos">LTS</abbr></h2>
+            <p><abbr title="Love of tacos">LTS</abbr> was founded in 2022 Our shop was built from a <strong>love of tacos</strong>❤️❤️❤️. We hope our shop adds a unique and interesting place to our little town.</p>
 
-        <h3>Taco Trivia</h3>
-        
-        <details>
-            <summary>When did tacos first appear in the United States</summary>
-            <p>1980<br>
-             1920</p>
-        </details>
+            <h3>Taco Trivia</h3>
+            
+            <details>
+                <summary>When did tacos first appear in the United States</summary>
+                <p>1980<br>
+                1920</p>
+            </details>
+        </section>
         <hr>
 
-        <h2>Our Menu</h2>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <table>
+                <tr>
+                    <td colspan="3">Our Tacos</td>
+                </tr>
+                <tr>
+                    <th>Tacos</th>
+                    <th>Qty</th>
+                    <th>Prices</th>
+                </tr>
 
-        <table>
-            <tr>
-                <td colspan="3">Our Tacos</td>
-            </tr>
-            <tr>
-                <th>Tacos</th>
-                <th>Qty</th>
-                <th>Prices</th>
-            </tr>
+                <tr>
+                    <th rowspan="3">Crunchy</th>
+                    <th>1</th>
+                    <th>$1.50</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>$2.50</th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>$3.50</th>
+                </tr>
+                <tr>
+                    <th rowspan="3">Soft</th>
+                    <td>1</td>
+                    <td>1.50</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3.50</td>
+                </tr>
 
-            <tr>
-                <th rowspan="3">Crunchy</th>
-                <th>1</th>
-                <th>$1.50</th>
-            </tr>
-            <tr>
-                <th>2</th>
-                <th>$2.50</th>
-            </tr>
-            <tr>
-                <th>3</th>
-                <th>$3.50</th>
-            </tr>
-            <tr>
-                <th rowspan="4">Soft</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1.50</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>2.50</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>3.50</td>
-            </tr>
-
-            <tr>
-                <td colspan="3">Chips & Salsa $2</td>
-            </tr>
-        </table>
-        <p>Back to Top</p>
+                <tr>
+                    <td colspan="3">Chips & Salsa $2</td>
+                </tr>
+            </table>
+        </section>
+        <p><a href="#">Back to Top</a></p>
         <hr>
         <p>Copyright &copy; The Little Taco Shop</p>
     </body>

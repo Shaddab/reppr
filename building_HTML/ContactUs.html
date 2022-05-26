@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <ul>
+        <li>Home</li>
+        <li>About LTS</li>
+        <li>Our Menu</li>
+        <li>Store Hours</li>
+    </ul>
+
+    <figure>
+        <img src="img/tacos_close_up_400x260.png" alt="closeup" width="400" height="260" loading="lazy">
+        <figcaption>Little Taco Shop Tacos</figcaption>
+    </figure>
+
+   
+
+
+    <form action="https://httpbin.org/get" method="get">
+        <legend><b>Personal Info</b></legend>
+        <fieldset>
+        <p>
+        <label for="yourName">Name:</label>
+        <input type="text" name="youName" id="yourName" placeholder="your name" autocomplete="on" required autofocus>
+        </p>
+        <p>
+        <label for="password">password:</label>
+        <input type="password" name="password" id="password" placeholder="password" required>
+        </p>
+        <p>
+        <label for="phone">phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="555-555-5555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+        </p>
+        <p>
+            <label for="decade">Favorite Decade</label>
+            <input type="number" name="decade" id="decade" min="1950" max="2022" step="10" value="1995">
+        </p>
+        <p>
+            <label for="coffee">Coffee</label>
+            <select name="coffee" id="coffee">
+                <optgroup label="Coffees">
+                <option value="regular coffee">Regular Coffee</option>
+                <option value="iced Coffee">Iced Coffee</option>
+            </optgroup>
+
+            <optgroup label="Espresso Drinks">
+                <option value="latino">Latino</option>
+                <option value="caffechino">Caffechino</option>
+            </optgroup>
+
+            <optgroup label="Drinks">
+                <option value="cortado" selected>Cortado</option>
+                <option value="Americano">Americano</option>
+            </optgroup>
+                <option value="others">Others</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="Mobile">Moblie:</label>
+            <input type="text" name="Mobile" id="Mobile" list="Mobile-list">
+            <datalist id="Mobile-list">
+            <option value="Nokia"></option>
+            <option value="Samsung"></option>
+            <option value="Apple"></option>
+            <option value="Oppo"></option>
+            <option value="Vivo"></option>
+            <option value="HTC"></option>
+        </datalist> 
+        </p>
+  
+        <p>
+            <legend>What is your favorite food?</legend>
+            <input type="radio" name="food" id="tacos" value="tacos">
+            <label for="tacos">Tacos</label>
+        </p>
+        <p>
+            <input type="radio" name="food" id="pizza" value="pizza">
+            <label for="pizza">Pizza</label>
+        </p>
+        <p>
+            <input type="radio" name="food" id="nachos" value="nachos">
+            <label for="nachos">Nachos</label>
+        </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>What's your favorite pet?</legend>
+            <p>
+            <input type="checkbox" name="pets" id="dog" value="dog">
+            <label for="dog">Dog</label>
+        </p>
+        <p>
+            <input type="checkbox" name="pets" id="cat" value="cat">
+            <label for="cat">Cats</label>
+        </p>
+        <p>
+            <input type="checkbox" name="pets" id="lion" value="lion">
+            <label for="lion">lion</label>
+        </p>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Send us a Message</legend>
+        <label for="message">your Message</label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type message"></textarea>
+        <br>
+        
+        <input type="submit" value="Send">
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </fieldset>
+    </form>
+    <h3>Our Location</h3>
+
+    <address>555 Taco Temptation Lane Suite T <br>
+             Kansas City, MO 55555-5555
+    </address>
+
+    <p><a href="img/html5.png" download>download</a></p>
+    <p><a href="#">Back to Top</a></p>
+
+</body>
+</html>
